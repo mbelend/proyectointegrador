@@ -1,0 +1,83 @@
+*{margin: 0;padding: 0;}
+html{font-family: arial;font-size: 16px;scroll-behavior: smooth;}
+
+.bg1{background-color: rgba(158, 88, 228);}
+.bg2{background-color: rgba(118, 62, 173);}
+.bg3{background: linear-gradient(mediumpurple,plum);}
+.bg4{background: linear-gradient(plum,mediumpurple);}
+.bg5{color: rgba(255, 227, 84);}
+
+
+.btn1{
+    display: block;
+    text-align:center;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:15px;
+    background-color: darkviolet;
+    color:plum;
+    transition:1s all 0s ease-in-out;
+}
+
+.btn1:hover{
+    box-shadow: 0 0 5px 5px palegoldenrod;
+    color: rgba(255, 227, 84);}
+.btn1:active{
+    box-shadow: 0 0 10px 10px palegoldenrod;
+    transform:scale(1.5);
+}
+
+
+.mercadopago img{width: 22%;}
+
+
+.rs{color: black;}
+.rs:hover{color: rgba(118, 62, 173);}
+.rs:active{transform: scale(1.6);}
+
+
+h2{font-family: 'Lobster Two', cursive;}
+p, .btn1{font-family: 'Raleway', sans-serif;}
+h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+
+#formcontact input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 2px white;
+}
+#formcontact input[type="checkbox"]:checked + label{
+    color: rgba(255, 227, 84);
+    font-weight: bold;
+}
+
+
+@keyframes enterleft{
+    from{transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to{transform: translateX(0);
+        opacity: 4;
+    }
+}
+
+@keyframes enterright{
+    from{transform: translateY(-500px);
+        opacity: -2;
+    }
+    to{transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+#header, #content, section, #footer{
+    animation-name: enterleft;
+    animation-duration: 2s;
+}
+
+#nav{
+    animation-name: enterright;
+    animation-duration: 3s;
+}
